@@ -12,6 +12,11 @@ import HelloWorld from "./components/HelloWorld.vue";
 @Component({
   components: {
     HelloWorld
+  },
+  methods: {
+    test: () => {
+      console.log('test')
+    }
   }
 })
 export default class App extends Vue {}
