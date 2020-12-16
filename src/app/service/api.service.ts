@@ -12,6 +12,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   public getTestData(): Observable<object> {
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=Chur&appid=${this.API_KEY}`);
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=Chur&units=metric&appid=${this.API_KEY}`);
   }
 }

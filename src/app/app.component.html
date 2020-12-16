@@ -1,9 +1,10 @@
 <h1>Closed-Weather</h1>
 
 <mat-card class="example-card">
-  <mat-card-title>{{weatherData.name}}</mat-card-title>
+  <mat-card-title style="color: white">{{weatherData.name}}</mat-card-title>
   <mat-card-content>
    <img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png"/>
-    <h3>{{weatherData.weather[0].description}}</h3>
+    <h3 style="color: white">{{weatherData.weather[0].description}}</h3>
+    <h4 style="color: white">Temperature: {{weatherData.main.temp}}</h4>
   </mat-card-content>
 </mat-card>
