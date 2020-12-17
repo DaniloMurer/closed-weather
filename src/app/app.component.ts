@@ -22,6 +22,10 @@ export class AppComponent implements OnInit{
     });
   }
 
+  roundTemperature(temp: number): number {
+    return Math.ceil(temp);
+  }
+
   addWeatherData(): void {
     console.log(this.cityName.value);
     this.apiService.getWeatherByCity(this.cityName.value).subscribe((data) => {

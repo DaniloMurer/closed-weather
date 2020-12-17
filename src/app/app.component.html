@@ -7,7 +7,7 @@
       <mat-card-content>
         <img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png"/>
         <h3 style="color: white">{{weatherData.weather[0].description}}</h3>
-        <h4 style="color: white">Temperature: {{weatherData.main.temp}}</h4>
+        <h4 style="color: white">Temperature: {{roundTemperature(weatherData.main.temp)}} °C</h4>
       </mat-card-content>
     </mat-card>
   </div>
