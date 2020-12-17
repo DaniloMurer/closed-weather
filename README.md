@@ -22,6 +22,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Running as Docker Container
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Install Docker for the respective OS.
+
+Run `ng build`.
+
+Run `docker build -t closed-weather . && docker run -p 80:80 --name closed-weather closed-weather` inside of the Root Project folder.
+
+Open Website at `http://localhost:80`

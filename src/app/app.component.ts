@@ -8,7 +8,7 @@ import {FormControl} from "@angular/forms";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'closed-weather';
+  title = 'ClosedWeather';
   weatherDataArray = new Array();
 
   cityName: FormControl = new FormControl('');
