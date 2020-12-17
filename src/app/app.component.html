@@ -1,5 +1,5 @@
 <h1 class="page-title"><b>Closed-Weather</b></h1>
-<p style="margin-left: 50px">Sample Application for <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+<p style="margin-left: 50px; color: white">Sample Application for <a style = "text-decoration: none; color: white;" href="https://openweathermap.org/">OpenWeatherMap</a></p>
 <div class="card-container">
   <div *ngFor="let weatherData of weatherDataArray">
     <mat-card class="example-card">
@@ -15,6 +15,6 @@
   <br>
 </div>
 <div class="card-container">
-  <input class="input-field" matInput placeholder="Enter City Name" [formControl]="cityName" />
-  <button mat-button color="primary" (click)="addWeatherData()">Get Weather</button>
+  <input style="border-radius: 5px; padding: 10px; border: none; background-color: #4c4c4c" class="input-field" matInput placeholder="Enter City Name" [formControl]="cityName" />
+  <button mat-button color="primary" (click)="addWeatherData()" style="color: white;">Get Weather</button>
 </div>

@@ -6,4 +6,4 @@ EXPOSE 80
 
 WORKDIR /usr/share/nginx/html
 
-COPY /dist/WarehouseManagement-Frontend/ /usr/share/nginx/html
+COPY /dist/closed-weather/ /usr/share/nginx/html

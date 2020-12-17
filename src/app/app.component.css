@@ -1,7 +1,7 @@
 .example-card {
   max-width: 150px;
   max-width: 200px;
-  background-color: #4a494a;
+  background-color: #4c4c4c;
   margin-left: 50px;
 }
 
@@ -21,4 +21,5 @@
   text-align: left;
   margin-top: 50px;
   margin-left: 50px;
+  color: white;
 }
