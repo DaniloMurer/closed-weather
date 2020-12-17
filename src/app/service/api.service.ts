@@ -14,4 +14,8 @@ export class ApiService {
   public getTestData(): Observable<object> {
     return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=Chur&units=metric&appid=${this.API_KEY}`);
   }
+
+  public getWeatherByCity(city: string): Observable<any> {
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.API_KEY}`)
+  }
 }

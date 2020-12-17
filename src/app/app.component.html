@@ -1,10 +1,17 @@
-<h1>Closed-Weather</h1>
-
-<mat-card class="example-card">
-  <mat-card-title style="color: white">{{weatherData.name}}</mat-card-title>
-  <mat-card-content>
-   <img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png"/>
-    <h3 style="color: white">{{weatherData.weather[0].description}}</h3>
-    <h4 style="color: white">Temperature: {{weatherData.main.temp}}</h4>
-  </mat-card-content>
-</mat-card>
+<h1 class="page-title">Closed-Weather</h1>
+<div class="card-container">
+  <div *ngFor="let weatherData of weatherDataArray">
+    <mat-card class="example-card">
+      <mat-card-title style="color: white">{{weatherData.name}}</mat-card-title>
+      <mat-card-content>
+        <img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png"/>
+        <h3 style="color: white">{{weatherData.weather[0].description}}</h3>
+        <h4 style="color: white">Temperature: {{weatherData.main.temp}}</h4>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <br>
+  <br>
+</div>
+<input class="input-field" matInput placeholder="Enter City Name" [formControl]="cityName" />
+<button mat-button color="primary" (click)="addWeatherData()">Get Weather</button>
